@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAA Honest HVAC | Precision Climate Redefined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles to handle the "Sexy" design requirements */
+        body { background-color: #0F172A; }
+        .h-black { font-family: 'Archivo Black', sans-serif; }
+        
+        /* Ensures the table first column stays locked on mobile */
+        .sticky-column {
+            position: sticky;
+            left: 0;
+            background-color: #0F172A;
+            z-index: 20;
+        }
+
+        /* Fluid Typography and clipping prevention */
+        .hero-title {
+            font-size: clamp(2.2rem, 8vw, 5.5rem);
+            line-height: 0.85;
+            letter-spacing: -0.04em;
+        }
+
+        /* Hide scrollbar for the table container while keeping scroll functionality */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="text-slate-300 font-['Inter'] selection:bg-[#B87333] selection:text-white antialiased">
+
+    <header class="fixed top-0 w-full z-[100] bg-[#0F172A]/90 backdrop-blur-2xl border-b border-white/5 px-8 py-6 flex justify-between items-center">
+        <div class="h-black text-2xl tracking-tighter leading-none">
+            <span class="text-[#B87333] italic">AAA</span> <span class="text-white">HONEST HVAC</span>
+        </div>
+        <nav class="hidden md:flex gap-10 text-[10px] font-black tracking-[0.3em] text-white/40">
+            <a href="#services" class="hover:text-[#B87333] transition-colors">SERVICES</a>
+            <a href="#pricing" class="hover:text-[#B87333] transition-colors">MEMBERSHIP</a>
+            <a href="#contact" class="hover:text-[#B87333] transition-colors">CONTACT</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <a href="tel:7042189286" class="hidden sm:block text-[10px] font-black tracking-[0.2em] text-[#B87333] border border-[#B87333]/40 px-6 py-3 hover:bg-[#B87333] hover:text-white transition-all rounded-sm uppercase">
+                (704) 218-9286
+            </a>
+            <div class="md:hidden">
+                <i data-lucide="menu" class="text-white cursor-pointer" id="mobile-menu-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center px-8 lg:px-24 overflow-hidden">
+        <div class="absolute inset-0 grayscale opacity-20 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-[#0F172A]/70 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-5xl mt-12" id="hero-content">
+            <h1 class="h-black hero-title text-white uppercase mb-10">
+                Precision Climate.<br />
+                <span class="text-[#B87333] block sm:inline">Redefining HVAC.</span>
+            </h1>
+            <p class="text-sm text-slate-400 max-w-md font-bold leading-relaxed border-l-2 border-[#B87333] pl-6 uppercase tracking-[0.2em]">
+                Family-owned. Future-facing. Providing Kannapolis, NC with elite service and absolute pricing transparency.
+            </p>
+            <div class="mt-12">
+                <a href="#contact" class="inline-block px-10 py-5 bg-[#B87333] text-white text-[10px] font-black tracking-[0.4em] uppercase hover:bg-white hover:text-black transition-all shadow-[0_10px_30px_rgba(184,115,51,0.3)] active:scale-95">
+                    Request Evaluation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-40 px-8 relative overflow-hidden bg-black/10">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="text-9xl font-serif text-[#B87333]/10 block mb-4 italic leading-none">“</span>
+            <p class="text-2xl md:text-3xl text-slate-200 leading-[1.4] italic font-light tracking-tight">
+                We founded AAA Honest HVAC on a simple realization: our neighbors are tired of the guesswork. We treat your home’s efficiency as our own—delivering long-term reliability without the corporate markup.
+            </p>
+            <div class="mt-16 h-px w-24 bg-[#B87333] mx-auto opacity-50"></div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="p-16 border border-white/5 bg-white/[0.02] group hover:bg-[#B87333]/5 transition-all duration-700">
+                <i data-lucide="wind" class="text-[#B87333] mb-8 group-hover:rotate-12 transition-transform" size="40"></i>
+                <h3 class="h-black text-2xl text-white uppercase mb-6 tracking-tighter">Precision Install</h3>
+                <p class="text-[10px] leading-loose opacity-50 uppercase tracking-[0.2em] font-black">Architectural integration for Furnaces, Heat Pumps, and Mini Splits.</p>
+            </div>
+            <div class="p-16 border border-white/5 bg-white/[0.02] group hover:bg-[#B87333]/5 transition-all duration-700">
+                <i data-lucide="zap" class="text-[#B87333] mb-8 group-hover:scale-110 transition-transform" size="40"></i>
+                <h3 class="h-black text-2xl text-white uppercase mb-6 tracking-tighter">Expert Repair</h3>
+                <p class="text-[10px] leading-loose opacity-50 uppercase tracking-[0.2em] font-black">Surgical troubleshooting for coils, motors, and refrigerant leaks.</p>
+            </div>
+            <div class="p-16 border border-white/5 bg-white/[0.02] group hover:bg-[#B87333]/5 transition-all duration-700">
+                <i data-lucide="check-circle-2" class="text-[#B87333] mb-8 group-hover:translate-y-[-5px] transition-transform" size="40"></i>
+                <h3 class="h-black text-2xl text-white uppercase mb-6 tracking-tighter">Maintenance</h3>
+                <p class="text-[10px] leading-loose opacity-50 uppercase tracking-[0.2em] font-black">Seasonal optimization to protect your investment and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32 px-8 bg-black/10">
+        <div class="max-w-7xl mx-auto overflow-hidden">
+            <div class="mb-20 text-center">
+                <h2 class="h-black text-5xl md:text-7xl text-white uppercase tracking-tighter">Annual <span class="text-[#B87333]">Value</span></h2>
+                <p class="text-[10px] tracking-[0.6em] text-slate-500 mt-6 font-black uppercase">Comparative Savings Analysis</p>
+            </div>
+            <div id="membership-table-container" class="overflow-x-auto hide-scrollbar">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto" id="contact-container">
+            </div>
+    </section>
+
+    <footer class="py-24 border-t border-white/5 text-center bg-black/40">
+        <div class="mb-16 flex flex-col items-center">
+            <span class="h-black text-5xl text-[#B87333] italic tracking-tighter leading-none">AAA</span>
+            <span class="text-[11px] tracking-[0.6em] font-black text-white uppercase mt-2 leading-none uppercase">Honest HVAC LLC</span>
+        </div>
+        <p class="text-[#B87333]/40 text-[9px] tracking-[0.4em] mb-12 max-w-lg mx-auto leading-loose font-black uppercase px-6">
+            Absolute technical precision. Total pricing transparency. The integrity of a North Carolina handshake.
+        </p>
+        <p class="text-[10px] tracking-[0.5em] text-slate-700 uppercase font-black italic">© 2026 AAA Honest HVAC LLC • Licensed & Insured</p>
+    </footer>
+
+    <a href="tel:7042189286" class="md:hidden fixed bottom-8 right-8 bg-[#B87333] text-white p-6 rounded-full shadow-[0_15px_30px_rgba(184,115,51,0.4)] z-[200] active:scale-90 transition-transform">
+        <i data-lucide="phone" size="28"></i>
+    </a>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Basic GSAP Hero reveal
+        gsap.from("#hero-content > *", {
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out"
+        });
+    </script>
+</body>
+</html>
