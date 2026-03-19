@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="google-site-verification" content="ywetfLgbSxfO2jKRdLuZI9yfirG5bNwCq0O0-Vr5V6c" />
+    
+    <title>AAA Honest HVAC | Precision Climate Redefined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <style>
+        /* Custom Slanted Slash Style for Pricing */
+        .slanted-slash {
+            position: relative;
+            display: inline-block;
+        }
+        .slanted-slash::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            width: 110%;
+            height: 2px;
+            background-color: rgba(184, 115, 51, 0.6); /* Copper Slash */
+            transform: translateY(-50%) rotate(-15deg);
+        }
+    </style>
+</head>
+<body class="bg-[#0F172A] text-slate-300 font-['Inter'] selection:bg-[#B87333] selection:text-white antialiased">
+
+    <header class="fixed top-0 w-full z-50 bg-[#0F172A]/80 backdrop-blur-xl border-b border-white/5 px-8 py-5 flex justify-between items-center">
+        <div class="font-['Archivo_Black'] text-xl tracking-tighter">
+            <span class="text-[#B87333]">AAA</span> <span class="text-white">HONEST HVAC</span>
+        </div>
+        
+        <nav class="hidden md:flex gap-10 text-[10px] font-bold tracking-[0.3em] text-white/60">
+            <a href="#services" class="hover:text-[#B87333] transition-colors uppercase">Services</a>
+            <a href="#pricing" class="hover:text-[#B87333] transition-colors uppercase">Membership</a>
+            <a href="#contact" class="hover:text-[#B87333] transition-colors uppercase">Contact</a>
+        </nav>
+
+        <div class="md:hidden">
+            <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+                <i data-lucide="menu" size="24"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center px-8 lg:px-24 overflow-hidden">
+        <div class="absolute inset-0 grayscale opacity-30 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-[#0F172A]/80 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-4xl" id="hero-content">
+            <h1 class="text-6xl lg:text-8xl font-['Archivo_Black'] text-white leading-none uppercase mb-8">
+                Precision Climate Control.<br /><span class="text-[#B87333] reveal-text block mt-4 text-5xl lg:text-7xl">Redefining HVAC.</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-xl font-light leading-relaxed border-l-2 border-[#B87333] pl-6 uppercase tracking-widest">
+                Kannapolis, NC. Elite Engineering. Absolute Transparency.
+            </p>
+            <div class="mt-12">
+                <a href="#contact" class="inline-block px-10 py-5 bg-[#B87333] text-white text-[10px] font-bold tracking-[0.4em] uppercase hover:bg-[#a0622a] transition-all">
+                    Request Evaluation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-8 max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+        <div class="relative" id="mission-text">
+            <span class="text-[12rem] font-serif text-[#B87333]/10 absolute -top-24 -left-12 italic">“</span>
+            <p class="text-2xl text-slate-200 leading-relaxed italic relative z-10">
+                We founded AAA Honest HVAC on a simple realization: our neighbors are tired of the guesswork. We treat your home’s efficiency as our own—delivering long-term reliability without the corporate markup.
+            </p>
+        </div>
+        <div class="h-px bg-slate-800 w-full hidden lg:block"></div>
+    </section>
+
+    <section id="services" class="py-24 px-8 bg-slate-900/20 scroll-mt-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
+                <i data-lucide="wind" class="text-[#B87333] mb-6 group-hover:scale-110 transition-transform" size="32"></i>
+                <h3 class="font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Precision Install</h3>
+                <p class="text-xs leading-relaxed opacity-60 uppercase tracking-widest">Architectural integration for Furnaces, Heat Pumps, and Mini Splits.</p>
+            </div>
+            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
+                <i data-lucide="zap" class="text-[#B87333] mb-6 group-hover:scale-110 transition-transform" size="32"></i>
+                <h3 class="font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Expert Repair</h3>
+                <p class="text-xs leading-relaxed opacity-60 uppercase tracking-widest">Surgical troubleshooting for coils, motors, and refrigerant leaks.</p>
+            </div>
+            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
+                <i data-lucide="check-circle-2" class="text-[#B87333] mb-6 group-hover:scale-110 transition-transform" size="32"></i>
+                <h3 class="font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Maintenance</h3>
+                <p class="text-xs leading-relaxed opacity-60 uppercase tracking-widest">Seasonal optimization to protect your investment and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 px-8 scroll-mt-20">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+                <div>
+                    <h2 class="text-4xl font-['Archivo_Black'] text-white uppercase tracking-tighter">
+                        Annual <span class="text-[#B87333]">Value</span>
+                    </h2>
+                    <p class="text-xs tracking-[0.4em] text-slate-500 mt-2 italic uppercase">
+                        Comparative Savings Analysis
+                    </p>
+                </div>
+
+                <div class="inline-flex items-center gap-6 bg-[#B87333]/10 border border-[#B87333]/30 p-6 rounded-sm">
+                    <div class="text-center border-r border-[#B87333]/30 pr-6">
+                        <span class="block text-[10px] font-black text-[#B87333] tracking-[0.3em] uppercase mb-1">Promo</span>
+                        <span class="text-3xl font-['Archivo_Black'] text-white tracking-tighter leading-none">20% OFF</span>
+                    </div>
+                    <div class="max-w-[240px]">
+                        <p class="text-[9px] font-black text-white uppercase tracking-widest leading-tight">
+                            New Business Membership
+                        </p>
+                        <p class="text-[8px] text-slate-500 uppercase tracking-widest mt-1 leading-relaxed">
+                            Call now to ask about how to get this discount.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="membership-table-container">
+                <div class="animate-pulse flex flex-col space-y-4">
+                    <div class="h-12 bg-white/5 w-full rounded-sm"></div>
+                    <div class="h-64 bg-white/5 w-full rounded-sm"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-[#0F172A] scroll-mt-20 border-t border-white/5">
+        <div class="max-w-4xl mx-auto" id="contact-container">
+            </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center">
+        <p class="text-[10px] tracking-[0.5em] text-slate-600 uppercase">© 2026 AAA Honest HVAC LLC • Licensed & Insured</p>
+    </footer>
+
+    <a href="tel:7042189286" class="md:hidden fixed bottom-6 right-6 bg-[#B87333] text-white p-5 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform">
+        <i data-lucide="phone" size="24"></i>
+    </a>
+
+    <script type="module" src="main.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
