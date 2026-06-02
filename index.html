@@ -165,11 +165,19 @@
         <i data-lucide="phone" size="24"></i>
     </a>
 
-    <script type="module" src="main.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
+   <script type="module">
+        import { initMembershipTable } from './membership_table.js';
+        import { initContactForm } from './contact_form.js';
+        import { initAnimations } from './animations.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                // Initialize visual elements safely
+                initMembershipTable();
+                initContactForm();
+                initAnimations();
+            } catch (err) {
+                console.error("Component initialization failed safely:", err);
             }
         });
     </script>
