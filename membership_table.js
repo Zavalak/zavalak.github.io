@@ -100,5 +100,7 @@ export const initMembershipTable = () => {
     </div>
   `;
 
-  container.innerHTML = tableHtml;
+  if (container) {
+    container.innerHTML = tableHtml;
+  }
 };
