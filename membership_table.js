@@ -4,27 +4,27 @@ export const initMembershipTable = () => {
   const tiers = [
     { 
       name: "One-Time Evaluation", 
-      price: "\$0.00", 
+      price: "$0.00", 
       highlight: false, 
-      data: ["\$99.99", "\$79.99", "\$199.99/hr", "---", "\$249.99", "\$249.99", "---", "---", "---"] 
+      data: ["$99.99", "$79.99", "$199.99/hr", "---", "$249.99", "$249.99", "---", "---", "---"] 
     },
     { 
       name: "Non-Member", 
-      price: "\$0.00", 
+      price: "$0.00", 
       highlight: false, 
-      data: ["\$99.99", "\$79.99", "\$199.99/hr", "Standard", "\$249.99", "\$249.99", "\$99.99", "Yes", "---"] 
+      data: ["$99.99", "$79.99", "$199.99/hr", "Standard", "$249.99", "$249.99", "$99.99", "Yes", "---"] 
     },
     { 
       name: "Basic Member", 
-      price: "\$249.99", 
+      price: "$249.99", 
       highlight: false, 
-      data: ["First diagnostic WAIVED*", "\$79.99", "\$149.99/hr", "Standard", "INCLUDED", "INCLUDED", "\$79.99", "Yes", "---"] 
+      data: ["First diagnostic WAIVED*", "$79.99", "$149.99/hr", "Standard", "INCLUDED", "INCLUDED", "$79.99", "Yes", "---"] 
     },
     { 
       name: "Premium Member", 
-      price: "\$499.99", 
+      price: "$499.99", 
       highlight: true, 
-      data: ["WAIVED", "WAIVED", "\$99.99/hr", "15% DISCOUNT", "INCLUDED", "INCLUDED", "WAIVED", "WAIVED", "UNDER 24H"] 
+      data: ["WAIVED", "WAIVED", "$99.99/hr", "15% DISCOUNT", "INCLUDED", "INCLUDED", "WAIVED", "WAIVED", "UNDER 24H"] 
     }
   ];
 
@@ -33,8 +33,8 @@ export const initMembershipTable = () => {
     "Additional System (Same Trip)", 
     "Urgent, After Hours & Holidays (after 6pm)",
     "Project Repair", 
-    "Spring Check (\$250 Value)", 
-    "Fall Check (\$250 Value)", 
+    "Spring Check ($250 Value)", 
+    "Fall Check ($250 Value)", 
     "Future Service Calls", 
     "Part Stocking Fee", 
     "Priority Scheduling"
@@ -49,9 +49,9 @@ export const initMembershipTable = () => {
               Service Component
             </th>
             ${tiers.map(t => `
-              <th class="p-3 sm:p-6 text-center min-w-[160px] sm:min-w-[180px] \${t.highlight ? 'bg-[#B87333]/10 border-x border-t border-[#B87333]' : ''}">
-                <span class="block text-[8px] sm:text-[10px] uppercase tracking-widest text-slate-400 mb-1">\${t.name}</span>
-                <span class="text-xl sm:text-3xl font-['Archivo_Black'] text-white leading-none">\${t.price}</span>
+              <th class="p-3 sm:p-6 text-center min-w-[160px] sm:min-w-[180px] ${t.highlight ? 'bg-[#B87333]/10 border-x border-t border-[#B87333]' : ''}">
+                <span class="block text-[8px] sm:text-[10px] uppercase tracking-widest text-slate-400 mb-1">${t.name}</span>
+                <span class="text-xl sm:text-3xl font-['Archivo_Black'] text-white leading-none">${t.price}</span>
               </th>
             `).join('')}
           </tr>
@@ -60,9 +60,9 @@ export const initMembershipTable = () => {
           ${rows.map((row, i) => `
             <tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
               <td class="sticky left-0 z-20 bg-[#0F172A] p-2 sm:p-4 text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-slate-500 group-hover:text-white transition-colors w-[110px] sm:w-[180px] border-r border-white/5 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.5)]">
-                \${row}
+                ${row}
               </td>
-              \${tiers.map(t => `
+              ${tiers.map(t => `
                 <td class="p-3 sm:p-4 text-center text-[10px] sm:text-[11px] font-black uppercase tracking-widest ${t.highlight ? 'bg-[#B87333]/5 border-x border-[#B87333] text-[#B87333]' : 'text-slate-400'}">
                   ${t.data[i]}
                 </td>
@@ -100,7 +100,5 @@ export const initMembershipTable = () => {
     </div>
   `;
 
-  if (container) {
-    container.innerHTML = tableHtml;
-  }
+  container.innerHTML = tableHtml;
 };
