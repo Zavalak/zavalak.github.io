@@ -17,8 +17,11 @@
       gtag('config', 'AW-18511412695');
     </script>
 
-    <!-- Google Ads Phone Call Conversion Tracking -->
+    <!-- Google Ads Phone Call Conversion Tracking (Configured for standard format & plain digits) -->
     <script>
+      gtag('config', 'AW-18511412695/6ZTNCLTa47AdENf79vpE', {
+        'phone_conversion_number': '(704) 218-9286'
+      });
       gtag('config', 'AW-18511412695/6ZTNCLTa47AdENf79vpE', {
         'phone_conversion_number': '7042189286'
       });
@@ -198,8 +201,8 @@
         </p>
     </footer>
 
-    <!-- MOBILE QUICK CALL BUTTON -->
-    <a href="tel:7042189286" class="md:hidden fixed bottom-6 right-6 bg-[#B87333] text-white p-5 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform">
+    <!-- MOBILE QUICK CALL BUTTON (Tagged for call tracking) -->
+    <a href="tel:7042189286" class="phone-number-track md:hidden fixed bottom-6 right-6 bg-[#B87333] text-white p-5 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform">
         <i data-lucide="phone" size="24"></i>
     </a>
 
