@@ -17,7 +17,9 @@ export const initContactForm = () => {
         <h2 class="text-4xl font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Secure Your <span class="text-[#B87333]">Expert</span></h2>
         <p class="text-slate-400 mb-12 uppercase text-[10px] tracking-[0.3em]">Request your diagnostic evaluation</p>
         <div id="emergency-alert" class="hidden mb-8 p-6 bg-red-950/30 border border-red-500/50 animate-pulse">
-          <p class="text-xs text-slate-200 uppercase tracking-widest leading-relaxed">Safety risk. Call dispatch immediately at (704) 218-9286.</p>
+          <p class="text-xs text-slate-200 uppercase tracking-widest leading-relaxed">
+            Safety risk. Call dispatch immediately at <span class="phone-number-track font-bold text-white">(704) 218-9286</span>.
+          </p>
         </div>
         <form id="hvac-contact-form" class="space-y-4">
           <div class="grid md:grid-cols-2 gap-4">
