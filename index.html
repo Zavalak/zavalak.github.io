@@ -7,13 +7,30 @@
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="ywetfLgbSxfO2jKRdLuZI9yfirG5bNwCq0O0-Vr5V6c" />
     
-    <!-- Google Tag (gtag.js) -->
+    <!-- Google Tag (gtag.js) Base Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18511412695"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'AW-18511412695');
+    </script>
+
+    <!-- Google Ads Phone Call Conversion Tracking -->
+    <script>
+      gtag('config', 'AW-18511412695/6ZTNCLTa47AdENf79vpE', {
+        'phone_conversion_number': '7042189286'
+      });
+    </script>
+
+    <!-- Google Ads Form/Appointment Conversion Snippet -->
+    <script>
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18511412695/NqcQCJizzpsdENf79vpE',
+        'value': 1.0,
+        'currency': 'USD'
+      });
     </script>
 
     <title>AAA Honest HVAC | Precision Climate Redefined</title>
@@ -157,6 +174,7 @@
             </p>
         </div>
 
+        <!-- Trust Credentials Module -->
         <div class="max-w-4xl mx-auto mb-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-[10px] uppercase tracking-[0.2em] text-slate-400">
             <div class="flex items-center gap-2 px-4 py-2 bg-slate-900/40 border border-slate-800 rounded-sm">
                 <i data-lucide="shield" class="text-[#B87333]" size="14"></i>
@@ -180,7 +198,7 @@
         </p>
     </footer>
 
-    <!-- MOBILE QUICK CALL FAB -->
+    <!-- MOBILE QUICK CALL BUTTON -->
     <a href="tel:7042189286" class="md:hidden fixed bottom-6 right-6 bg-[#B87333] text-white p-5 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform">
         <i data-lucide="phone" size="24"></i>
     </a>
