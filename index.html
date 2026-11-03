@@ -3,231 +3,787 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAA Honest HVAC | Precision Climate Redefined</title>
+    <title>AAA Honest HVAC | Transparent Heating & Cooling | 100-Mile Charlotte Dispatch</title>
+    <meta name="description" content="NC Licensed HVAC Contractor (Lic #38572). Upfront diagnostic pricing, 100-mile regional dispatch across Charlotte, Lake Norman, and Piedmont. Instant Square booking, SMS text, and emergency dispatch.">
     
-    <meta name="google-site-verification" content="ywetfLgbSxfO2jKRdLuZI9yfirG5bNwCq0O0-Vr5V6c" />
-    
-    <!-- Google Tag (gtag.js) Base Tag -->
+    <!-- Google Tag Manager / Ads Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18511412695"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'AW-18511412695');
     </script>
 
-    <!-- Google Ads Phone Call Conversion Tracking -->
-    <script>
-      gtag('config', 'AW-18511412695/6ZTNCLTa47AdENf79vpE', {
-        'phone_conversion_number': '(704) 218-9286'
-      });
-      gtag('config', 'AW-18511412695/6ZTNCLTa47AdENf79vpE', {
-        'phone_conversion_number': '7042189286'
-      });
+    <!-- Schema.org HVACBusiness JSON-LD Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "AAA Honest HVAC",
+      "image": "https://www.aaahonesthvac.com/assets/logo.png",
+      "@id": "https://www.aaahonesthvac.com",
+      "url": "https://www.aaahonesthvac.com",
+      "telephone": "+1-704-218-9286",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Charlotte",
+        "addressRegion": "NC",
+        "postalCode": "28202",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.2271,
+        "longitude": -80.8431
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Charlotte" },
+        { "@type": "City", "name": "Concord" },
+        { "@type": "City", "name": "Kannapolis" },
+        { "@type": "City", "name": "Huntersville" },
+        { "@type": "City", "name": "Mooresville" },
+        { "@type": "City", "name": "Cornelius" },
+        { "@type": "City", "name": "Davidson" },
+        { "@type": "City", "name": "Gastonia" },
+        { "@type": "City", "name": "Monroe" },
+        { "@type": "City", "name": "Matthews" },
+        { "@type": "City", "name": "Mint Hill" },
+        { "@type": "City", "name": "Mount Holly" },
+        { "@type": "City", "name": "Salisbury" },
+        { "@type": "City", "name": "Statesville" },
+        { "@type": "City", "name": "Hickory" },
+        { "@type": "City", "name": "Rock Hill" },
+        { "@type": "City", "name": "Fort Mill" },
+        { "@type": "City", "name": "Winston-Salem" },
+        { "@type": "City", "name": "Greensboro" },
+        { "@type": "City", "name": "Asheboro" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "HVAC Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Comprehensive Diagnostic & Electrical Testing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "High-Efficiency Heat Pump Replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air Conditioning Emergency Repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Furnace Safety Diagnostic" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ductless Mini-Split Installation" } }
+        ]
+      }
+    }
     </script>
 
-    <!-- Google Ads Form/Appointment Conversion Snippet -->
-    <script>
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18511412695/NqcQCJizzpsdENf79vpE',
-        'value': 1.0,
-        'currency': 'USD'
-      });
-    </script>
-
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        copper: {
+                            DEFAULT: '#B87333',
+                            light: '#C88343',
+                            dark: '#A0622A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
+
     <style>
-        .slanted-slash {
-            position: relative;
-            display: inline-block;
-        }
-        .slanted-slash::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -5%;
-            width: 110%;
-            height: 2px;
-            background-color: rgba(184, 115, 51, 0.6);
-            transform: translateY(-50%) rotate(-15deg);
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Archivo Black', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .copper-glow { box-shadow: 0 0 35px -5px rgba(184, 115, 51, 0.25); }
     </style>
 </head>
-<body class="bg-[#0F172A] text-slate-300 font-['Inter'] selection:bg-[#B87333] selection:text-white antialiased">
+<body class="bg-[#0B1120] text-slate-100 antialiased selection:bg-[#B87333] selection:text-white">
 
-    <!-- NAVIGATION HEADER -->
-    <header class="fixed top-0 w-full z-50 bg-[#0F172A]/80 backdrop-blur-xl border-b border-white/5 px-8 py-5 flex justify-between items-center">
-        <div class="font-['Archivo_Black'] text-xl tracking-tighter">
-            <span class="text-[#B87333]">AAA</span> <span class="text-white">HONEST HVAC</span>
-        </div>
-        
-        <nav class="hidden md:flex items-center gap-8 text-[10px] font-bold tracking-[0.3em] text-white/60">
-            <a href="#services" class="hover:text-[#B87333] transition-colors uppercase">Services</a>
-            <a href="#pricing" class="hover:text-[#B87333] transition-colors uppercase">Membership</a>
-            <a href="#contact" class="hover:text-[#B87333] transition-colors uppercase">Contact</a>
-            
-            <!-- Desktop Click-to-Call Button (Tracked by Google Ads) -->
-            <a href="tel:7042189286" class="phone-number-track flex items-center gap-2 px-4 py-2 border border-[#B87333]/40 bg-[#B87333]/10 text-white hover:bg-[#B87333] transition-all rounded-sm tracking-widest text-[11px] group">
-                <i data-lucide="phone" size="14" class="text-[#B87333] group-hover:text-white transition-colors"></i>
-                <span class="font-['Archivo_Black'] tracking-normal">(704) 218-9286</span>
+    <!-- FLOATING TOP NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0B1120]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-sm bg-[#B87333] flex items-center justify-center text-white font-headline text-xl shadow-lg">
+                    A
+                </div>
+                <div>
+                    <span class="font-headline tracking-tighter text-lg text-white block leading-none">AAA HONEST HVAC</span>
+                    <span class="text-[9px] font-mono tracking-widest text-[#B87333] uppercase">NC LIC #38572 • 100-MILE RADIUS</span>
+                </div>
             </a>
-        </nav>
 
-        <div class="md:hidden">
-            <button id="mobile-menu-toggle" class="text-white focus:outline-none">
-                <i data-lucide="menu" size="24"></i>
-            </button>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-slate-300">
+                <a href="#schedule" class="hover:text-[#B87333] transition-colors">Book Service</a>
+                <a href="#pricing" class="hover:text-[#B87333] transition-colors">Pricing Grid</a>
+                <a href="#service-area" class="hover:text-[#B87333] transition-colors">100-Mile Area</a>
+                <a href="#guarantee" class="hover:text-[#B87333] transition-colors">Owner Bio</a>
+            </nav>
+
+            <!-- Direct Contact Actions -->
+            <div class="flex items-center gap-3">
+                <a href="tel:7042189286" class="flex items-center gap-2 px-4 py-2.5 bg-slate-900 border border-slate-800 text-xs font-mono font-bold hover:border-[#B87333] transition-colors text-white">
+                    <i data-lucide="phone-call" size="14" class="text-emerald-400"></i>
+                    <span>(704) 218-9286</span>
+                </a>
+                <a href="#schedule" class="hidden sm:inline-flex px-5 py-2.5 bg-[#B87333] hover:bg-[#a0622a] text-white text-[11px] font-bold uppercase tracking-widest transition-all">
+                    Schedule Now
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section id="home" class="relative h-screen flex items-center px-8 lg:px-24 overflow-hidden">
-        <div class="absolute inset-0 grayscale opacity-30 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070')] bg-cover bg-center"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-[#0F172A]/80 to-transparent"></div>
-        
-        <div class="relative z-10 max-w-4xl" id="hero-content">
-            <h1 class="text-6xl lg:text-8xl font-['Archivo_Black'] text-white leading-none uppercase mb-8">
-                Precision Climate Control.<br /><span class="text-[#B87333] reveal-text block mt-4 text-5xl lg:text-7xl">Redefining HVAC.</span>
+    <section class="relative pt-36 pb-24 px-6 border-b border-white/5 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/15 via-[#0B1120] to-[#0B1120] -z-10"></div>
+        <div class="max-w-5xl mx-auto text-center">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 border border-slate-800 text-slate-300 text-[10px] font-mono uppercase tracking-widest mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Active 100-Mile Dispatch • Licensed NC HVAC Contractor</span>
+            </div>
+
+            <h1 class="font-headline text-4xl sm:text-6xl md:text-7xl uppercase tracking-tighter text-white mb-6 leading-[1.05]">
+                Direct Honesty. <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#B87333] via-amber-400 to-[#B87333]">Zero Markup Tricks.</span>
             </h1>
-            <p class="text-lg text-slate-400 max-w-xl font-light leading-relaxed border-l-2 border-[#B87333] pl-6 uppercase tracking-widest">
-                Servicing Charlotte, NC and neighboring areas. Elite Engineering. Absolute Transparency.
+
+            <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                Professional heating, cooling, and heat pump diagnostics across Greater Charlotte, Lake Norman, and the Piedmont. Work directly with licensed technicians—never commissioned salespeople.
             </p>
-            <div class="mt-12">
-                <a href="#contact" class="inline-block px-10 py-5 bg-[#B87333] text-white text-[10px] font-bold tracking-[0.4em] uppercase hover:bg-[#a0622a] transition-all">
-                    Request Evaluation
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#schedule" class="w-full sm:w-auto px-8 py-4 bg-[#B87333] hover:bg-[#a0622a] text-white text-xs font-bold uppercase tracking-widest transition-all text-center">
+                    Book Service Portal
+                </a>
+                <a href="sms:7042189286" class="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white text-xs font-bold uppercase tracking-widest transition-all text-center flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" size="14" class="text-emerald-400"></i>
+                    <span>Live 2-Way Text</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto text-left">
+                <div class="p-4 bg-slate-900/40 border border-white/5">
+                    <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block mb-1">State License</span>
+                    <span class="font-headline text-lg text-white">#38572</span>
+                </div>
+                <div class="p-4 bg-slate-900/40 border border-white/5">
+                    <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block mb-1">Dispatch Radius</span>
+                    <span class="font-headline text-lg text-[#B87333]">100 Miles</span>
+                </div>
+                <div class="p-4 bg-slate-900/40 border border-white/5">
+                    <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block mb-1">Verified Jobs</span>
+                    <span id="stat-total-jobs" class="font-headline text-lg text-white">50+</span>
+                </div>
+                <div class="p-4 bg-slate-900/40 border border-white/5">
+                    <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block mb-1">Diagnostic Fee</span>
+                    <span class="font-headline text-lg text-emerald-400">100% Offset</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: 3-CHANNEL SCHEDULING HUB -->
+    <section id="schedule" class="py-24 px-6 bg-[#0F172A] border-b border-white/5 scroll-mt-20">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#B87333]/10 border border-[#B87333]/30 text-[#B87333] text-[9px] uppercase tracking-widest font-black mb-3">
+                    <i data-lucide="calendar" size="12"></i> Fast Dispatch Hub
+                </div>
+                <h2 class="font-headline text-3xl sm:text-4xl text-white uppercase tracking-tighter">
+                    Schedule <span class="text-[#B87333]">Service</span>
+                </h2>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">
+                    Choose your preferred communication method
+                </p>
+            </div>
+
+            <!-- Segmented 3-Channel Tabs -->
+            <div class="flex max-w-lg mx-auto mb-8 p-1 bg-slate-900 border border-slate-800 rounded-sm">
+                <button id="tab-square-btn" type="button" class="flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all bg-[#B87333] text-white">
+                    Book Online (Square)
+                </button>
+                <button id="tab-sms-btn" type="button" class="flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all text-slate-400 hover:text-white">
+                    Live SMS Text
+                </button>
+                <button id="tab-quote-btn" type="button" class="flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all text-slate-400 hover:text-white">
+                    Diagnostic Quote
+                </button>
+            </div>
+
+            <!-- CHANNEL 1: SQUARE ONLINE BOOKING -->
+            <div id="panel-square" class="p-8 sm:p-12 border border-[#B87333]/30 bg-slate-900/40 text-center rounded-sm transition-all copper-glow">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#B87333]/10 border border-[#B87333]/30 text-[#B87333] text-[9px] uppercase tracking-widest font-black mb-4">
+                    <i data-lucide="calendar-check" size="12"></i> Instant Real-Time Slots
+                </div>
+                <h3 class="font-headline text-2xl sm:text-3xl text-white uppercase mb-3 tracking-tighter">
+                    Square Appointments Portal
+                </h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest max-w-md mx-auto mb-8 leading-relaxed">
+                    Lock in an arrival window directly on our technician dispatch calendar.
+                </p>
+                <div class="flex justify-center">
+                    <!-- Start Square Appointments Embed Code -->
+                    <script src='https://square.site/appointments/buyer/widget/yvms9lcjeb91if/LATAPZW3EE4MN.js'></script>
+                    <!-- End Square Appointments Embed Code -->
+                </div>
+            </div>
+
+            <!-- CHANNEL 2: LIVE SMS TEXT PORTAL -->
+            <div id="panel-sms" class="hidden p-8 sm:p-12 border border-slate-800 bg-slate-900/40 rounded-sm transition-all">
+                <div class="text-center max-w-lg mx-auto mb-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[9px] uppercase tracking-widest font-black mb-4">
+                        <i data-lucide="message-square" size="12"></i> Real-Time Text Portal
+                    </div>
+                    <h3 class="font-headline text-2xl sm:text-3xl text-white uppercase mb-2 tracking-tighter">
+                        Text Our Team Directly
+                    </h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest">
+                        Send photos, system symptoms, or arrival inquiries straight to our technicians.
+                    </p>
+                </div>
+
+                <div class="max-w-md mx-auto space-y-6">
+                    <a href="sms:7042189286?body=Hello%20AAA%20Honest%20HVAC,%20I%20need%20assistance%20with..." class="w-full py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-mono text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-3 transition-colors shadow-lg">
+                        <i data-lucide="message-circle" size="18"></i>
+                        <span>Start Live Text: (704) 218-9286</span>
+                    </a>
+
+                    <!-- Operating Hours & Policy -->
+                    <div class="p-5 bg-slate-950 border border-slate-800 text-xs space-y-3">
+                        <div class="flex items-center justify-between text-slate-300">
+                            <span class="font-bold uppercase tracking-wider text-[11px]">Customer Support Hours:</span>
+                            <span class="text-emerald-400 font-mono text-[11px] font-bold">Mon–Sat • 9am–6pm EST</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">
+                            <strong class="text-white">Continuous Monitoring:</strong> Inquiries submitted outside standard hours are monitored constantly. While priority is given to active emergency jobs, we strive to follow up after-hours as promptly as possible.
+                        </p>
+                    </div>
+
+                    <!-- Quick Starter Topic Prompts -->
+                    <div>
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-slate-500 block mb-2">Quick Message Starters:</span>
+                        <div class="grid grid-cols-2 gap-2 text-[10px]">
+                            <a href="sms:7042189286?body=My%20AC%20or%20Heat%20Pump%20is%20not%20cooling/heating." class="p-2.5 bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 text-center uppercase tracking-wider transition-colors">
+                                "System Not Working"
+                            </a>
+                            <a href="sms:7042189286?body=I%20would%20like%20a%20quote%20on%20system%20replacement." class="p-2.5 bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 text-center uppercase tracking-wider transition-colors">
+                                "Replacement Quote"
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHANNEL 3: CUSTOM DIAGNOSTIC FORM -->
+            <div id="panel-quote" class="hidden p-8 sm:p-10 border border-slate-800 bg-slate-900/40 rounded-sm transition-all">
+                <form id="diagnostic-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1">Full Name</label>
+                            <input type="text" id="form-name" required class="w-full bg-slate-950 border border-slate-800 p-3 text-sm text-white focus:border-[#B87333] outline-none" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1">Phone Number</label>
+                            <input type="tel" id="form-phone" required class="w-full bg-slate-950 border border-slate-800 p-3 text-sm text-white focus:border-[#B87333] outline-none" placeholder="(704) 555-0199">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1">Service City / Zip</label>
+                            <input type="text" id="form-city" required class="w-full bg-slate-950 border border-slate-800 p-3 text-sm text-white focus:border-[#B87333] outline-none" placeholder="e.g. Concord, NC (28027)">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1">System Type</label>
+                            <select id="form-system" class="w-full bg-slate-950 border border-slate-800 p-3 text-sm text-white focus:border-[#B87333] outline-none">
+                                <option value="Heat Pump">High-Efficiency Heat Pump</option>
+                                <option value="AC & Gas Furnace">AC & Gas Furnace Split</option>
+                                <option value="Ductless Mini-Split">Ductless Mini-Split</option>
+                                <option value="Package Unit">Rooftop / Package Unit</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1">Primary Issue / Symptoms</label>
+                        <select id="form-symptom" class="w-full bg-slate-950 border border-slate-800 p-3 text-sm text-white focus:border-[#B87333] outline-none">
+                            <option value="No Cooling / Blowing Warm Air">No Cooling / Blowing Warm Air</option>
+                            <option value="No Heat / Aux Heat Running Constantly">No Heat / Aux Heat Running Constantly</option>
+                            <option value="Outdoor Fan Not Spinning / Humming">Outdoor Fan Not Spinning / Humming</option>
+                            <option value="Water Leaking Inside / Drain Pan Full">Water Leaking Inside / Drain Pan Full</option>
+                            <option value="Strange Burning Odor or Noise">Strange Burning Odor or Electrical Noise</option>
+                            <option value="Full Replacement Estimate">Full Replacement Estimate</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1">Notes / Equipment Age (Optional)</label>
+                        <textarea id="form-notes" rows="3" class="w-full bg-slate-950 border border-slate-800 p-3 text-sm text-white focus:border-[#B87333] outline-none" placeholder="Provide any details about breaker trips, error codes, or unit age..."></textarea>
+                    </div>
+
+                    <button type="submit" id="form-submit-btn" class="w-full py-4 bg-[#B87333] hover:bg-[#a0622a] text-white text-xs font-bold uppercase tracking-widest transition-all">
+                        Submit Diagnostic Request
+                    </button>
+                    <div id="form-status" class="text-center text-xs font-mono hidden pt-2"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: TRANSPARENT PRICING GRID (PRESERVED) -->
+    <section id="pricing" class="py-24 px-6 bg-[#0B1120] border-b border-white/5 scroll-mt-20">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[9px] uppercase tracking-widest font-black mb-3">
+                    <i data-lucide="shield-check" size="12"></i> Upfront Transparency
+                </div>
+                <h2 class="font-headline text-3xl sm:text-5xl text-white uppercase tracking-tighter">
+                    Standard <span class="text-[#B87333]">Pricing</span> Grid
+                </h2>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-3 leading-relaxed">
+                    Diagnostic charges are 100% credited toward repair labor. No hidden trip charges within our coverage area.
+                </p>
+            </div>
+
+            <!-- Pricing Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                
+                <!-- Tier 1 -->
+                <div class="p-8 bg-slate-900/50 border border-slate-800 rounded-sm relative flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-[#B87333] uppercase tracking-widest block mb-2">Step 1: Evaluation</span>
+                        <h3 class="font-headline text-2xl text-white uppercase mb-4">Precision Diagnostic</h3>
+                        <div class="font-headline text-4xl text-white mb-6">$89 <span class="text-xs font-mono text-slate-500 tracking-normal font-normal">/ system</span></div>
+                        <ul class="text-xs text-slate-400 space-y-3 font-light mb-8">
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> High-voltage contactor & capacitor test</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Refrigerant pressure & subcool check</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Blower amp draw & static pressure</li>
+                            <li class="flex items-center gap-2 text-white font-medium"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> 100% applied toward completed repair</li>
+                        </ul>
+                    </div>
+                    <a href="#schedule" class="block w-full py-3 bg-slate-800 hover:bg-slate-700 text-white text-center text-[10px] font-bold uppercase tracking-widest transition-colors">
+                        Book Diagnostic
+                    </a>
+                </div>
+
+                <!-- Tier 2 (Highlighted) -->
+                <div class="p-8 bg-slate-900 border-2 border-[#B87333] rounded-sm relative flex flex-col justify-between copper-glow">
+                    <div class="absolute -top-3 right-6 px-3 py-0.5 bg-[#B87333] text-white text-[9px] font-mono font-bold uppercase tracking-widest">
+                        Most Common
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-mono text-[#B87333] uppercase tracking-widest block mb-2">Step 2: Minor Component</span>
+                        <h3 class="font-headline text-2xl text-white uppercase mb-4">Electrical & Relays</h3>
+                        <div class="font-headline text-4xl text-white mb-6">$180 – $320 <span class="text-xs font-mono text-slate-500 tracking-normal font-normal">flat</span></div>
+                        <ul class="text-xs text-slate-300 space-y-3 font-light mb-8">
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Dual-run capacitor replacement</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Heavy-duty sealed contactor</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Hard start kit & relay harness</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> 1-Year replacement parts warranty</li>
+                        </ul>
+                    </div>
+                    <a href="#schedule" class="block w-full py-3 bg-[#B87333] hover:bg-[#a0622a] text-white text-center text-[10px] font-bold uppercase tracking-widest transition-colors">
+                        Schedule Repair
+                    </a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="p-8 bg-slate-900/50 border border-slate-800 rounded-sm relative flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono text-[#B87333] uppercase tracking-widest block mb-2">Step 3: Major Repair</span>
+                        <h3 class="font-headline text-2xl text-white uppercase mb-4">Motors & Airflow</h3>
+                        <div class="font-headline text-4xl text-white mb-6">$450 – $850 <span class="text-xs font-mono text-slate-500 tracking-normal font-normal">flat</span></div>
+                        <ul class="text-xs text-slate-400 space-y-3 font-light mb-8">
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> ECM blower motor replacement</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Condenser fan motor & blade assembly</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Evaporator drain pan & trap reconstruction</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-emerald-400 shrink-0"></i> Full manufacturer-backed warranty</li>
+                        </ul>
+                    </div>
+                    <a href="#schedule" class="block w-full py-3 bg-slate-800 hover:bg-slate-700 text-white text-center text-[10px] font-bold uppercase tracking-widest transition-colors">
+                        Inquire Today
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Guarantee Banner -->
+            <div class="p-6 bg-slate-950 border border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="badge-check" class="text-[#B87333] shrink-0" size="24"></i>
+                    <span>All repairs include upfront written pricing before any work starts. No surprise invoices or pressure sales.</span>
+                </div>
+                <a href="tel:7042189286" class="shrink-0 text-[#B87333] font-mono font-bold hover:underline">
+                    Have questions? Call (704) 218-9286
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- MISSION STATEMENT -->
-    <section class="py-32 px-8 max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-        <div class="relative" id="mission-text">
-            <span class="text-[12rem] font-serif text-[#B87333]/10 absolute -top-24 -left-12 italic">“</span>
-            <p class="text-2xl text-slate-200 leading-relaxed italic relative z-10">
-                We founded AAA Honest HVAC on a simple realization: our neighbors are tired of the guesswork. We treat your home’s efficiency as our own—delivering long-term reliability without the corporate markup.
-            </p>
-        </div>
-        <div class="h-px bg-slate-800 w-full hidden lg:block"></div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-24 px-8 bg-slate-900/20 scroll-mt-20">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
-            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
-                <i data-lucide="wind" class="text-[#B87333] mb-6 group-hover:scale-110 transition-transform" size="32"></i>
-                <h3 class="font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Precision Install</h3>
-                <p class="text-xs leading-relaxed opacity-60 uppercase tracking-widest">Architectural integration for Furnaces, Heat Pumps, and Mini Splits.</p>
-            </div>
-            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
-                <i data-lucide="zap" class="text-[#B87333] mb-6 group-hover:scale-110 transition-transform" size="32"></i>
-                <h3 class="font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Expert Repair</h3>
-                <p class="text-xs leading-relaxed opacity-60 uppercase tracking-widest">Surgical troubleshooting for coils, motors, and refrigerant leaks.</p>
-            </div>
-            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
-                <i data-lucide="check-circle-2" class="text-[#B87333] mb-6 group-hover:scale-110 transition-transform" size="32"></i>
-                <h3 class="font-['Archivo_Black'] text-white uppercase mb-4 tracking-tighter">Maintenance</h3>
-                <p class="text-xs leading-relaxed opacity-60 uppercase tracking-widest">Seasonal optimization to protect your investment and efficiency.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- MEMBERSHIP & PRICING SECTION -->
-    <section id="pricing" class="py-24 px-8 scroll-mt-20">
+    <!-- SECTION: 100-MILE SERVICE AREA & LIVE JOBBER DISPATCH FEED -->
+    <section id="service-area" class="py-24 px-6 bg-[#0B1120] border-b border-white/5 scroll-mt-20">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-                <div>
-                    <h2 class="text-4xl font-['Archivo_Black'] text-white uppercase tracking-tighter">
-                        Annual <span class="text-[#B87333]">Value</span>
-                    </h2>
-                    <p class="text-xs tracking-[0.4em] text-slate-500 mt-2 italic uppercase">
-                        Comparative Savings Analysis
-                    </p>
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#B87333]/10 border border-[#B87333]/30 text-[#B87333] text-[9px] uppercase tracking-widest font-black mb-3">
+                    <i data-lucide="map-pin" size="12"></i> Regional Coverage
                 </div>
+                <h2 class="font-headline text-3xl sm:text-5xl text-white uppercase tracking-tighter">
+                    100-Mile <span class="text-[#B87333]">Charlotte Regional</span> Dispatch
+                </h2>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-3 leading-relaxed">
+                    Rapid dispatch covering Mecklenburg, Cabarrus, Iredell, Union, Gaston, Rowan, and surrounding Piedmont counties.
+                </p>
             </div>
 
-            <div id="membership-table-container">
-                <div class="animate-pulse flex flex-col space-y-4">
-                    <div class="h-12 bg-white/5 w-full rounded-sm"></div>
-                    <div class="h-64 bg-white/5 w-full rounded-sm"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left 5 Cols: City Corridors & Real-time Zip Checker -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Zip Checker Tool -->
+                    <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-sm">
+                        <h3 class="text-xs font-bold text-white uppercase tracking-widest mb-3 flex items-center gap-2">
+                            <i data-lucide="search" size="14" class="text-[#B87333]"></i> Check Your Location
+                        </h3>
+                        <div class="flex gap-2">
+                            <input type="text" id="zip-search-input" placeholder="Enter Zip Code or Town..." class="flex-1 bg-slate-950 border border-slate-800 px-3 py-2 text-xs text-white uppercase focus:border-[#B87333] outline-none">
+                            <button id="zip-check-btn" type="button" class="px-4 py-2 bg-[#B87333] hover:bg-[#a0622a] text-white text-[10px] font-bold uppercase tracking-wider">
+                                Verify
+                            </button>
+                        </div>
+                        <div id="zip-check-result" class="text-[11px] font-mono mt-3 hidden"></div>
+                    </div>
+
+                    <!-- Core Coverage Corridors -->
+                    <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-sm space-y-4">
+                        <div>
+                            <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest block mb-2">● Core Charlotte Corridor</span>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-bold text-slate-300">
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Charlotte</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Concord</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Kannapolis</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Huntersville</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Mooresville</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Cornelius</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Davidson</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Matthews</span>
+                                <span class="px-2.5 py-1 bg-slate-800 border border-slate-700/60">Mint Hill</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-[10px] font-mono text-[#B87333] font-bold uppercase tracking-widest block mb-2">● Extended 100-Mile Regional Perimeter</span>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] uppercase font-medium text-slate-400">
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Gastonia</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Monroe</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Salisbury</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Statesville</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Hickory</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Lincolnton</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Rock Hill</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Fort Mill</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Winston-Salem</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Greensboro</span>
+                                <span class="px-2.5 py-1 bg-slate-800/60 border border-slate-800">Asheboro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Jobber Dispatch Feed Social Proof Card -->
+                    <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-sm">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/5">
+                            <div class="flex items-center gap-2">
+                                <span class="relative flex h-2 w-2">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                </span>
+                                <h4 class="text-xs font-bold text-white uppercase tracking-widest">Recent Field Dispatches</h4>
+                            </div>
+                            <span id="live-job-count" class="text-[10px] font-mono text-[#B87333] font-bold uppercase tracking-wider">
+                                50+ Verified Jobs
+                            </span>
+                        </div>
+
+                        <!-- Injected live from dispatch_feed.js -->
+                        <div id="live-dispatch-list" class="space-y-2">
+                            <!-- Static baseline for immediate crawler and visitor visibility -->
+                            <div class="p-3 bg-slate-900/80 border border-slate-800 flex items-center justify-between text-xs">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                                    <div>
+                                        <span class="font-bold text-white uppercase">Charlotte</span>
+                                        <span class="text-slate-500 font-mono text-[10px]">(28202)</span>
+                                        <span class="text-slate-400 block text-[11px]">Heat Pump Diagnostic</span>
+                                    </div>
+                                </div>
+                                <span class="text-[9px] uppercase tracking-wider text-slate-500 font-mono">Recent</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Right 7 Cols: Dark Map Embed -->
+                <div class="lg:col-span-7 h-[580px] border border-slate-800 rounded-sm overflow-hidden relative shadow-2xl">
+                    <iframe 
+                        title="AAA Honest HVAC Charlotte 100-Mile Service Area"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d834133.6569069764!2d-81.50000000000001!3d35.25000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20NC!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.1);" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div class="absolute bottom-4 left-4 right-4 p-3 bg-slate-950/90 backdrop-blur-md border border-slate-800 flex items-center justify-between text-xs">
+                        <span class="text-slate-300 font-mono text-[11px]">Primary Center: Charlotte, NC • 100-Mile Perimeter</span>
+                        <a href="tel:7042189286" class="text-[#B87333] font-bold uppercase tracking-wider text-[10px] hover:underline">Call Dispatch</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="py-24 px-6 bg-[#0F172A] scroll-mt-20 border-t border-white/5">
-        <div class="max-w-4xl mx-auto" id="contact-container">
+    <!-- SECTION: OWNER ACCOUNTABILITY BIO -->
+    <section id="guarantee" class="py-24 px-6 bg-[#0F172A] border-b border-white/5 scroll-mt-20">
+        <div class="max-w-4xl mx-auto">
+            <div class="p-8 sm:p-12 bg-slate-900 border border-slate-800 rounded-sm flex flex-col md:flex-row items-center gap-8">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#B87333]/20 border-2 border-[#B87333] flex items-center justify-center shrink-0">
+                    <i data-lucide="shield-alert" size="48" class="text-[#B87333]"></i>
+                </div>
+                <div class="space-y-4 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#B87333]/10 border border-[#B87333]/30 text-[#B87333] text-[9px] uppercase tracking-widest font-black">
+                        Direct Accountability
+                    </div>
+                    <h3 class="font-headline text-2xl sm:text-3xl text-white uppercase tracking-tighter">
+                        "The Face Behind The Diagnostic"
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+                        At AAA Honest HVAC, you don't deal with a rotating call center or commission-hungry salesmen trying to push an $11,000 system when a $220 contactor or capacitor will restore your heat. When you book a call or text our number, you speak directly with a licensed technician committed to testing—not guessing.
+                    </p>
+                    <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-6 text-xs font-mono text-slate-400">
+                        <span>NC License: <strong class="text-white">#38572</strong></span>
+                        <span>Direct Cell: <strong class="text-white">(704) 218-9286</strong></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-16 border-t border-slate-900 text-center px-8 bg-slate-950/20">
-        <div class="max-w-4xl mx-auto mb-8">
-            <p class="text-[9px] tracking-[0.3em] text-slate-500 uppercase mb-4 font-bold">Elite Service Area</p>
-            <p class="text-[10px] sm:text-xs text-slate-400/60 uppercase tracking-[0.2em] leading-loose">
-                Charlotte • Concord • Kannapolis • Huntersville • Cornelius • Davidson • Gastonia • Mooresville • Matthews • Mint Hill
-            </p>
-        </div>
-
-        <div class="max-w-4xl mx-auto mb-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-[10px] uppercase tracking-[0.2em] text-slate-400">
-            <div class="flex items-center gap-2 px-4 py-2 bg-slate-900/40 border border-slate-800 rounded-sm">
-                <i data-lucide="shield" class="text-[#B87333]" size="14"></i>
-                <span>NC HVAC License: <span class="text-white font-bold">L.38572</span></span>
+    <footer class="py-16 px-6 bg-[#080D1A] text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
+            <div>
+                <span class="font-headline text-white tracking-tighter text-lg block mb-3">AAA HONEST HVAC</span>
+                <p class="text-[11px] leading-relaxed text-slate-500 mb-4">
+                    Transparent residential and commercial HVAC diagnostics, emergency repairs, and high-efficiency installations across the Greater Charlotte 100-mile perimeter.
+                </p>
+                <span class="font-mono text-[10px] text-emerald-400 block">NC State HVAC License #38572</span>
             </div>
-            
-            <a href="https://www.bbb.org/us/nc/kannapolis/profile/heating-and-air-conditioning/aaa-honest-hvac-llc-0473-92037859" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="flex items-center gap-2 px-4 py-2 bg-slate-900/40 border border-[#B87333]/20 hover:border-[#B87333]/60 rounded-sm transition-all text-slate-300 hover:text-white group">
-                <i data-lucide="award" class="text-[#B87333] group-hover:scale-110 transition-transform" size="14"></i>
-                <span class="font-bold">BBB ACCREDITED & RATED</span>
-                <i data-lucide="external-link" class="opacity-40" size="10"></i>
-            </a>
+
+            <div>
+                <span class="text-[10px] font-mono uppercase tracking-widest text-white font-bold block mb-4">Core Hubs</span>
+                <ul class="text-[11px] space-y-2 text-slate-400 font-light">
+                    <li>Charlotte, NC (28202)</li>
+                    <li>Concord, NC (28027)</li>
+                    <li>Mooresville, NC (28117)</li>
+                    <li>Huntersville, NC (28078)</li>
+                    <li>Gastonia, NC (28056)</li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="text-[10px] font-mono uppercase tracking-widest text-white font-bold block mb-4">Direct Contact</span>
+                <ul class="text-[11px] space-y-2 text-slate-400 font-light">
+                    <li>Phone: <a href="tel:7042189286" class="text-white hover:text-[#B87333] font-mono">(704) 218-9286</a></li>
+                    <li>Live SMS: <a href="sms:7042189286" class="text-white hover:text-[#B87333] font-mono">(704) 218-9286</a></li>
+                    <li>Hours: Mon–Sat 9:00 AM – 6:00 PM EST</li>
+                    <li>24/7 Monitored Emergency Dispatch</li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="text-[10px] font-mono uppercase tracking-widest text-white font-bold block mb-4">Compliance</span>
+                <p class="text-[11px] text-slate-500 leading-relaxed mb-3">
+                    Diagnostic fees credited toward accepted repairs. Flat-rate pricing presented in writing before repair authorization.
+                </p>
+                <div class="flex gap-2">
+                    <span class="px-2 py-1 bg-slate-900 border border-slate-800 text-[9px] font-mono text-slate-400">EPA 608 Certified</span>
+                    <span class="px-2 py-1 bg-slate-900 border border-slate-800 text-[9px] font-mono text-slate-400">Fully Insured</span>
+                </div>
+            </div>
         </div>
 
-        <div class="h-px bg-white/5 w-12 mx-auto mb-8"></div>
-
-        <p class="text-[10px] tracking-[0.5em] text-slate-600 uppercase">
-            © 2026 AAA Honest HVAC LLC • Licensed & Insured
-        </p>
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-600">
+            <span>&copy; 2026 AAA Honest HVAC. All rights reserved.</span>
+            <span>Serving Greater Charlotte & 100-Mile NC/SC Piedmont</span>
+        </div>
     </footer>
 
-    <!-- MOBILE QUICK CALL BUTTON (Tagged for dynamic call replacement) -->
-    <a href="tel:7042189286" class="phone-number-track md:hidden fixed bottom-6 right-6 bg-[#B87333] text-white p-5 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform">
-        <i data-lucide="phone" size="24"></i>
-    </a>
-
-    <!-- MODULE SCRIPTS -->
+    <!-- INTERACTIVE JAVASCRIPT & MODULE LOGIC -->
     <script type="module">
-        import { initMembershipTable } from './membership_table.js';
-        import { initContactForm } from './contact_form.js';
-        import { initAnimations } from './animations.js';
+        import { initDispatchFeed } from './dispatch_feed.js';
 
-        const runInit = () => {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-            try { initMembershipTable(); } catch (e) { console.error("Table init error:", e); }
-            try { initContactForm(); } catch (e) { console.error("Form init error:", e); }
-            try { initAnimations(); } catch (e) { console.error("Animation init error:", e); }
+        // 1. Initialize Lucide Icons
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
+
+        // 2. Tab Switcher Logic (Concept 1: Square vs SMS vs Form)
+        const initBookingTabs = () => {
+            const squareBtn = document.getElementById('tab-square-btn');
+            const smsBtn = document.getElementById('tab-sms-btn');
+            const quoteBtn = document.getElementById('tab-quote-btn');
+
+            const squarePanel = document.getElementById('panel-square');
+            const smsPanel = document.getElementById('panel-sms');
+            const quotePanel = document.getElementById('panel-quote');
+
+            if (!squareBtn || !smsBtn || !quoteBtn) return;
+
+            const resetTabs = () => {
+                [squareBtn, smsBtn, quoteBtn].forEach(b => {
+                    b.className = "flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all text-slate-400 hover:text-white";
+                });
+                [squarePanel, smsPanel, quotePanel].forEach(p => p.classList.add('hidden'));
+            };
+
+            squareBtn.addEventListener('click', () => {
+                resetTabs();
+                squareBtn.className = "flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all bg-[#B87333] text-white";
+                squarePanel.classList.remove('hidden');
+            });
+
+            smsBtn.addEventListener('click', () => {
+                resetTabs();
+                smsBtn.className = "flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all bg-[#B87333] text-white";
+                smsPanel.classList.remove('hidden');
+            });
+
+            quoteBtn.addEventListener('click', () => {
+                resetTabs();
+                quoteBtn.className = "flex-1 py-3 text-[10px] uppercase font-bold tracking-wider transition-all bg-[#B87333] text-white";
+                quotePanel.classList.remove('hidden');
+            });
         };
 
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', runInit);
-        } else {
-            runInit();
-        }
+        // 3. 100-Mile Zip Code Checker Tool
+        const initZipChecker = () => {
+            const input = document.getElementById('zip-search-input');
+            const btn = document.getElementById('zip-check-btn');
+            const result = document.getElementById('zip-check-result');
+
+            if (!input || !btn || !result) return;
+
+            const check = () => {
+                const query = input.value.trim().toLowerCase();
+                if (!query) return;
+
+                result.classList.remove('hidden');
+
+                // Major 100-mile zip prefixes: 280, 281, 282, 286, 270, 271, 272, 297
+                const validPrefixes = ['280', '281', '282', '286', '270', '271', '272', '297'];
+                const isZipMatch = validPrefixes.some(prefix => query.startsWith(prefix));
+
+                const towns = ['charlotte', 'concord', 'kannapolis', 'huntersville', 'mooresville', 
+                               'cornelius', 'davidson', 'gastonia', 'monroe', 'matthews', 'mint hill', 
+                               'salisbury', 'statesville', 'rock hill', 'fort mill', 'hickory', 'winston-salem', 'greensboro', 'asheboro'];
+                const isTownMatch = towns.some(t => query.includes(t));
+
+                if (isZipMatch || isTownMatch) {
+                    result.innerHTML = `<span class="text-emerald-400 font-bold">✓ Location Confirmed:</span> Inside our 100-mile dispatch radius. Direct scheduling available.`;
+                } else {
+                    result.innerHTML = `<span class="text-[#B87333] font-bold">● Extended Radius:</span> Call <a href="tel:7042189286" class="underline text-white">(704) 218-9286</a> to confirm immediate technician availability for your area.`;
+                }
+            };
+
+            btn.addEventListener('click', check);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') check();
+            });
+        };
+
+        // 4. Diagnostic Form Submission Handler (SheetDB endpoint)
+        const initFormSubmission = () => {
+            const form = document.getElementById('diagnostic-form');
+            const status = document.getElementById('form-status');
+            const btn = document.getElementById('form-submit-btn');
+
+            if (!form) return;
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                btn.disabled = true;
+                btn.textContent = "TRANSMITTING TO DISPATCH...";
+                status.classList.remove('hidden');
+                status.textContent = "Connecting to dispatch server...";
+                status.className = "text-center text-xs font-mono pt-2 text-slate-400";
+
+                const payload = {
+                    data: [{
+                        Name: document.getElementById('form-name').value,
+                        Phone: document.getElementById('form-phone').value,
+                        Location: document.getElementById('form-city').value,
+                        System: document.getElementById('form-system').value,
+                        Symptom: document.getElementById('form-symptom').value,
+                        Notes: document.getElementById('form-notes').value,
+                        SubmittedAt: new Date().toLocaleString()
+                    }]
+                };
+
+                try {
+                    // Send directly to SheetDB Leads endpoint
+                    const res = await fetch("https://sheetdb.io/api/v1/5swcdzp4fav3o", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (res.ok) {
+                        status.textContent = "✓ Inquest received! A technician will text/call shortly.";
+                        status.className = "text-center text-xs font-mono pt-2 text-emerald-400 font-bold";
+                        form.reset();
+                    } else {
+                        throw new Error("Transmission error");
+                    }
+                } catch (err) {
+                    status.textContent = "Please call directly at (704) 218-9286 or text us for immediate response.";
+                    status.className = "text-center text-xs font-mono pt-2 text-amber-400";
+                } finally {
+                    btn.disabled = false;
+                    btn.textContent = "SUBMIT DIAGNOSTIC REQUEST";
+                }
+            });
+        };
+
+        // Run all component initializers
+        document.addEventListener('DOMContentLoaded', () => {
+            initBookingTabs();
+            initZipChecker();
+            initFormSubmission();
+            initDispatchFeed();
+        });
     </script>
 </body>
 </html>
