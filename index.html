@@ -143,15 +143,20 @@
 <body class="selection:bg-[#B87333] selection:text-white antialiased">
 
     <!-- 1. TOP STICKY NAVIGATION -->
-            <a href="#home" class="flex items-center gap-3 group">
-            <img src="./logo.png"
+<!-- 1. TOP STICKY NAVIGATION -->
+    <header class="fixed top-0 w-full z-50 bg-[#080D1A]/95 backdrop-blur-xl border-b border-white/5 px-4 sm:px-8 lg:px-12 py-3.5 flex justify-between items-center transition-all">
+        
+        <!-- Left: Brand Logo + Name -->
+        <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+            <img src="./logo.png" 
                  alt="AAA Honest HVAC Logo" 
-                 class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover border border-[#B87333]/40 shadow-sm group-hover:border-[#B87333] transition-all shrink-0">
-            <div class="font-archivo text-lg sm:text-xl tracking-tighter leading-none">
+                 class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover border border-[#B87333]/50 shadow-sm group-hover:border-[#B87333] transition-all">
+            <div class="font-archivo text-base sm:text-xl tracking-tight leading-none">
                 <span class="text-[#B87333]">AAA</span> <span class="text-white">HONEST HVAC</span>
             </div>
-        </a> 
-    
+        </a>
+        
+        <!-- Desktop Navigation Links -->
         <nav class="hidden xl:flex items-center gap-8 text-[10px] font-bold tracking-[0.25em] text-white/70">
             <a href="#services" class="hover:text-[#B87333] transition-colors uppercase">Services</a>
             <a href="#coverage" class="hover:text-[#B87333] transition-colors uppercase">100-Mile Radius</a>
@@ -166,18 +171,18 @@
             </a>
         </nav>
 
-        <div class="flex items-center gap-3 xl:hidden">
-            <a href="tel:7042189286" class="phone-number-track flex items-center gap-1.5 px-3 py-1.5 border border-[#B87333]/40 bg-[#B87333]/20 text-white rounded-xs text-[11px] font-bold">
+        <!-- Right: Mobile Actions (Call Button + Hamburger Menu) -->
+        <div class="flex items-center gap-2 sm:gap-3 xl:hidden">
+            <a href="tel:7042189286" class="phone-number-track flex items-center gap-1.5 px-3 py-1.5 border border-[#B87333]/50 bg-[#B87333]/20 hover:bg-[#B87333]/30 text-white rounded-xs text-[10px] font-archivo tracking-wider transition-all">
                 <i data-lucide="phone" class="w-3.5 h-3.5 text-[#B87333]"></i>
-                <span class="sm:inline hidden font-archivo">(704) 218-9286</span>
-                <span class="sm:hidden font-archivo">CALL</span>
+                <span>CALL</span>
             </a>
-            <button id="mobile-menu-btn" class="p-2 text-white/80 hover:text-white focus:outline-none" aria-label="Toggle Navigation">
-                <i data-lucide="menu" class="w-6 h-6"></i>
+            <button id="mobile-menu-btn" class="p-2 text-slate-300 hover:text-white bg-slate-900/60 border border-slate-800 rounded-xs transition-colors flex items-center justify-center focus:outline-none" aria-label="Toggle Navigation">
+                <i data-lucide="menu" class="w-5 h-5 text-white"></i>
             </button>
         </div>
     </header>
-
+    
     <!-- MOBILE EXPANDABLE DRAWER -->
     <div id="mobile-drawer" class="fixed inset-0 z-40 bg-[#080D1A]/98 backdrop-blur-2xl flex flex-col justify-center items-center gap-6 text-sm uppercase tracking-[0.3em] font-bold text-white transition-all transform translate-x-full">
         <button id="mobile-drawer-close" class="absolute top-6 right-6 text-slate-400 hover:text-white">
