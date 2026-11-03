@@ -730,49 +730,103 @@
     </section>
 
     <!-- 8. ANNUAL VALUE & MEMBERSHIP COMPARISON TABLE -->
-<section id="contact-hub" style="padding: 60px 20px; background-color: #f8fafc; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+<section id="contact-hub" class="contact-hub-section">
+  <div class="hub-container">
 
-    <!-- Heading & Trust Signals -->
-    <span style="display: inline-block; padding: 6px 14px; background-color: #e2e8f0; color: #1e293b; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 9999px; margin-bottom: 12px;">
-      NC Mechanical License #L.38572
-    </span>
-    
-    <h2 style="font-size: 32px; font-weight: 800; color: #0f172a; margin-top: 0; margin-bottom: 10px;">
-      Book Diagnostics & Repair
-    </h2>
-    
-    <p style="font-size: 16px; color: #475569; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.5;">
-      Transparent flat-rate diagnostic dispatch across the greater Charlotte perimeter. Select an on-call appointment slot below or reach our 24/7 emergency dispatch line directly.
-    </p>
-
-    <!-- Square Appointments Embed Wrapper -->
-    <div class="square-widget-container" style="width: 100%; max-width: 850px; margin: 0 auto; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); overflow: hidden; min-height: 650px;">
-      <!-- Start Square Appointments Embed Code -->
-      <script src='https://square.site/appointments/buyer/widget/yvms9lcjeb91if/LATAPZW3EE4MN.js'></script>
-      <!-- End Square Appointments Embed Code -->
+    <!-- Header & Trust Badges -->
+    <div class="hub-header">
+      <span class="hub-badge">NC Mechanical License #L.38572</span>
+      <h2>Get In Touch & Schedule Service</h2>
+      <p>Choose your preferred way to connect: book an appointment slot directly, text dispatch, or send an intake message.</p>
     </div>
 
-    <!-- Direct Emergency Contact Box -->
-    <div style="margin-top: 35px; padding: 20px; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; display: inline-block; max-width: 650px; width: 100%;">
-      <p style="margin: 0 0 10px 0; font-size: 15px; font-weight: 600; color: #1e293b;">
-        Need Immediate 24/7 Emergency Dispatch?
-      </p>
-      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-        <a href="tel:7042189286" style="display: inline-block; padding: 12px 24px; background-color: #0284c7; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 6px;">
-          📞 Call (704) 218-9286
-        </a>
-        <a href="sms:7042189286" style="display: inline-block; padding: 12px 24px; background-color: #0f172a; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 6px;">
-          💬 Text Tech Directly
-        </a>
+    <!-- The 3 Tab Selection Buttons -->
+    <div class="tab-button-group">
+      <button type="button" class="tab-btn active" onclick="switchHubTab(event, 'tab-booking')">
+        📅 1. Book Online (Square)
+      </button>
+      <button type="button" class="tab-btn" onclick="switchHubTab(event, 'tab-text')">
+        💬 2. Text Tech Directly
+      </button>
+      <button type="button" class="tab-btn" onclick="switchHubTab(event, 'tab-contact')">
+        📋 3. Dispatch Form / Call
+      </button>
+    </div>
+
+    <!-- TAB 1 CONTENT: SQUARE APPOINTMENTS EMBED -->
+    <div id="tab-booking" class="hub-tab-panel active">
+      <div class="square-widget-container">
+        <!-- Start Square Appointments Embed Code -->
+        <script src='https://square.site/appointments/buyer/widget/yvms9lcjeb91if/LATAPZW3EE4MN.js'></script>
+        <!-- End Square Appointments Embed Code -->
       </div>
-      <p style="margin: 12px 0 0 0; font-size: 13px; color: #64748b;">
-        Serving Charlotte, Lake Norman, Concord, Gastonia &amp; surrounding 100-mile region.
-      </p>
+    </div>
+
+    <!-- TAB 2 CONTENT: LIVE SMS / TEXT DISPATCH -->
+    <div id="tab-text" class="hub-tab-panel">
+      <div class="tab-card text-center">
+        <h3>Fast Emergency SMS Dispatch</h3>
+        <p>Texting our on-call technician is the fastest way to get triage during severe heat or freeze breakdowns.</p>
+        
+        <div class="sms-action-box">
+          <p class="phone-display">(704) 218-9286</p>
+          <a href="sms:7042189286?&body=Hi%20AAA%20Honest%20HVAC,%20I%20need%20emergency%20service%20in%20Charlotte.%20My%20system%20issue%20is:%20" class="btn-sms-launch">
+            Tap To Open Messages
+          </a>
+        </div>
+        <p class="subtext">Available 24/7. Monitored continuously for emergency outages across the Charlotte 100-mile perimeter.</p>
+      </div>
+    </div>
+
+    <!-- TAB 3 CONTENT: CONTACT FORM & CALL DIRECT -->
+    <div id="tab-contact" class="hub-tab-panel">
+      <div class="tab-card">
+        <h3>Direct Technician Contact</h3>
+        <p class="text-center">Prefer to call or leave a detailed message? Reach us below.</p>
+        
+        <div class="call-banner">
+          <span>Call 24/7:</span>
+          <a href="tel:7042189286" class="phone-link">(704) 218-9286</a>
+        </div>
+
+        <form class="hub-form" onsubmit="event.preventDefault(); alert('Message received! Our technician will respond promptly.');">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required class="form-input">
+            <input type="tel" placeholder="Phone Number" required class="form-input">
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="City / Neighborhood (e.g., Lake Norman, Charlotte)" required class="form-input">
+          </div>
+          <div class="form-row">
+            <textarea placeholder="Describe the symptoms (e.g., unit buzzing, blowing lukewarm air, tripped breaker)" rows="4" class="form-input" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Service Request</button>
+        </form>
+      </div>
     </div>
 
   </div>
 </section>
+
+<!-- Tab Switching Script -->
+<script>
+  function switchHubTab(event, tabId) {
+    // Remove active state from all buttons
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Remove active state from all tab panels
+    const panels = document.querySelectorAll('.hub-tab-panel');
+    panels.forEach(panel => panel.classList.remove('active'));
+
+    // Activate the clicked button and target panel
+    event.currentTarget.classList.add('active');
+    const target = document.getElementById(tabId);
+    if (target) {
+      target.classList.add('active');
+    }
+  }
+</script>
     
     <!-- 9. THE 3-CHANNEL CONTACT & SCHEDULING HUB -->
     <section id="contact-hub" class="py-24 px-6 bg-[#080D1A] scroll-mt-20 border-t border-white/5">
