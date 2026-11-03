@@ -70,3 +70,34 @@ input:focus, textarea:focus {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ======================================================== */
+/* SQUARE APPOINTMENTS EMBED STYLING                        */
+/* ======================================================== */
+
+.square-widget-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-height: 650px;
+}
+
+.square-widget-container iframe {
+  width: 100% !important;
+  border: none !important;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .square-widget-container {
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 750px;
+  }
+}
