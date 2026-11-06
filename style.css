@@ -71,3 +71,26 @@ input:focus, textarea:focus {
   transform: translateY(0);
 }
 
+/* ======================================================== */
+/* STATUS INDICATOR DOT STYLING                             */
+/* ======================================================== */
+
+.status-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Green dot with subtle glow for active 9am-6pm EST */
+.status-pulse-dot.online {
+  background-color: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.7);
+}
+
+/* Subdued slate dot for after-hours */
+.status-pulse-dot.after-hours {
+  background-color: #64748b;
+  box-shadow: none;
+}
